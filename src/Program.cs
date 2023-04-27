@@ -1,10 +1,5 @@
-# Create Interface instance
-This is an example which shows how to create an interface in C#
-## The problem
-In my work we have to write tests which cover method with interfaces as arguments. I spend a lot of time to find the easiest way to do that ... but without any significant success.
-## The solution
-Example
-```csharp
+﻿namespace InterfaceInstance;
+
 public interface IBaseInterface
 {
     Guid Id { get; set; }
@@ -32,9 +27,3 @@ class Program
         Console.WriteLine(instance.Value); // Output: 22
     }
 }
-```
-This CreateInterface method creates an interface instance.
-
-# My observations
-The code is not ready for production use. The creation is not too fast. Now I use it only for test purposes.
-
