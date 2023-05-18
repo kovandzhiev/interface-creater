@@ -42,8 +42,8 @@ public static class TestTools
             {
                 var interfaceProperty = result.GetType().GetProperty(property.Name);
 
-                interfaceProperty.SetValue(result, property.GetValue(propertyValues));
-            }
+            interfaceProperty.SetValue(result, property.GetValue(propertyValues));
+        }
         }
 
         return result;
